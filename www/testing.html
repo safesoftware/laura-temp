@@ -37,7 +37,7 @@
 			// Initialize variables
 			setWorkspace();
 
-			// Ask FME Server for testing the current session id and set it
+			// Ask FME Server for testing another change the current session id and set it
 			FMEServer.getSession( repository, workspace, function(json){if( json.serviceResponse.files ) {
 				session = json.serviceResponse.session;
 				path = json.serviceResponse.files.folder[0].path;
